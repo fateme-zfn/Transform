@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient( rgb(0, 6, 74) , rgb(62, 45, 122) , rgb(93, 77, 151), rgb(178, 181, 216))
+            
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .container {
+            width: 180px;
+            height: 270px;
+            position: relative;
+            transform: rotate(-30deg) skew(25deg) scale(0.8);
+            box-shadow: 0 0 50px 0 #181818;
+        }
+
+        .container>img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .4s all linear;
+        }
+
+        .container:hover img:nth-child(5) {
+            transform: translate(160px, -160px);
+            opacity: 1;
+        }
+        .container:hover img:nth-child(4) {
+            transform: translate(120px, -120px);
+            opacity: 0.8;
+        }
+        .container:hover img:nth-child(3) {
+            transform: translate(80px, -80px);
+            opacity: 0.6;
+        }
+        .container:hover img:nth-child(2) {
+            transform: translate(40px, -40px);
+            opacity: 0.4;
+        }
+        .container:hover img:nth-child(1) {
+            opacity: 0.2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <img src="img/1.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
